@@ -15,6 +15,9 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
+@RestController
+@RequestMapping("/dogs")
+@CrossOrigin
 public class DogController {
 
     private final DogService dogService;
