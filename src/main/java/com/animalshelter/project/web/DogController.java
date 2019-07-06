@@ -23,8 +23,8 @@ public class DogController {
     private final DogService dogService;
 
     @Autowired
-    public DogController(DogService productService) {
-        this.dogService = productService;
+    public DogController(DogService dogService) {
+        this.dogService = dogService;
     }
 
     // endpoint

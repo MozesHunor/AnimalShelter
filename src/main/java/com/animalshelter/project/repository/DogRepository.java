@@ -11,6 +11,7 @@ public interface DogRepository extends JpaRepository<Dog, Long> {
     // queries derived from method names
     Page<Dog> findByNameContaining(String partialName, Pageable pageable);
 
+
     @Query(value = "SELECT * FROM dog WHERE breed LIKE '%?1'", nativeQuery = true)
     Page<Dog> findByBreed(String breed, Pageable pageable);
 
