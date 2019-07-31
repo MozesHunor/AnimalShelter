@@ -36,7 +36,7 @@ public class DogServiceIntegrationTests {
         request.setAge(2);
         request.setBreed("German Shepherd");
         request.setNeedsMedicalAttention(false);
-        request.setSinceInShelter(new Date(2019, 07, 07));
+        request.setSinceInShelter("2019-07-07");
         request.setWasAdopted(false);
         request.setWeight(32);
 
@@ -87,7 +87,7 @@ public class DogServiceIntegrationTests {
         request.setName("Blacky");
         request.setNeedsMedicalAttention(true);
         request.setWeight(56);
-        request.setSinceInShelter(new Date(2019, 8, 8));
+        request.setSinceInShelter("2019-08-08");
 
         Dog updatedDog = dogService.updateDog(createdDog.getId(), request);
 

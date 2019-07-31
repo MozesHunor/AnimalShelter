@@ -5,7 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
-import java.util.Date;
 
 @Entity
 public class Dog {
@@ -22,8 +21,7 @@ public class Dog {
     @NotNull
     @Min(0)
     private int age;
-    @NotNull
-    private Date sinceInShelter;
+    private String sinceInShelter;
     @NotNull
     private boolean needsMedicalAttention;
     @NotNull
@@ -69,11 +67,11 @@ public class Dog {
         this.age = age;
     }
 
-    public Date getSinceInShelter() {
+    public String getSinceInShelter() {
         return sinceInShelter;
     }
 
-    public void setSinceInShelter(Date sinceInShelter) {
+    public void setSinceInShelter(String sinceInShelter) {
         this.sinceInShelter = sinceInShelter;
     }
 

@@ -2,7 +2,6 @@ package com.animalshelter.project.transfer;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
-import java.util.Date;
 
 public class UpdateDogRequest {
 
@@ -15,8 +14,7 @@ public class UpdateDogRequest {
     @NotNull
     @Min(0)
     private int age;
-    @NotNull
-    private Date sinceInShelter;
+    private String sinceInShelter;
     @NotNull
     private boolean needsMedicalAttention;
     @NotNull
@@ -54,11 +52,11 @@ public class UpdateDogRequest {
         this.age = age;
     }
 
-    public Date getSinceInShelter() {
+    public String getSinceInShelter() {
         return sinceInShelter;
     }
 
-    public void setSinceInShelter(Date sinceInShelter) {
+    public void setSinceInShelter(String sinceInShelter) {
         this.sinceInShelter = sinceInShelter;
     }
 
